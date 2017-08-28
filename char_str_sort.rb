@@ -1,16 +1,20 @@
 
 a = Hash.new()
 
-b = 'adasdafgfdhdahahahahahahahahahahahetrwqyyyyyfgyfgrewtttttttttttttttttttttttttttkjfgjsdxc';
+puts "Enter the string : "
+b = gets.chomp
 
+#split the string into characters and store into an array 'c'
 c = b.split(//)
 
 temp = Hash.new
 
+# assigning the values as hash's keys, so that only unique characters are obtained
 c.each do |x|
     temp["#{x}"] = 0
 end
 
+# the unique characters (keys of hashes) are now counted one by one by comparing them to their character array 'c'
 temp.each do |k,v| 
     for i in 0..c.length-1
         if k == c[i]
@@ -19,7 +23,7 @@ temp.each do |k,v|
     end   
 end
 sorted = temp.sort_by {|_key, value| value}.reverse
-# p sorted
+
 ans = []
 
 sorted.each do |k,v| 
