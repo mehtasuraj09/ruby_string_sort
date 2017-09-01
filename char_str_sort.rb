@@ -1,4 +1,3 @@
-
 a = Hash.new()
 
 puts "Enter the string : "
@@ -28,11 +27,11 @@ ans = []
 
 sorted.each do |k,v| 
     q = v.to_i
-    
+
     for i in 0..q-1
         ans << k
     end
-    
+  
 end
 
 puts ans.map { |i| i.to_s }.join()
