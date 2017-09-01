@@ -34,4 +34,5 @@ sorted.each do |k,v|
   
 end
 
-puts ans.map { |i| i.to_s }.join()
+# final output
+puts ans.map { |i| i.to_s }.join() 
