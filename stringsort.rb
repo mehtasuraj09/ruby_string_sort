@@ -35,9 +35,3 @@ class CharStringSort
         return desired_string
     end
 end
-
-puts "Enter the string : "
-string_to_sort = gets.chomp
-
-mostCharFirstObj = CharStringSort. new
-p mostCharFirstObj.mostCharFirst string_to_sort
