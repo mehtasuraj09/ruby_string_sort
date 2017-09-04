@@ -30,8 +30,19 @@ class CharStringSort
         end
 
         # final output
-        desired_string = ans.map { |i| i.to_s }.join() 
-
-        return desired_string
+        ans.map { |i| i.to_s }.join() 
     end
+    
+    # following is an optimized method
+    # help credtits - https://plus.google.com/106946447977305745599 (Андрей Свидерский)
+
+    def mostCharFirst2(string_to_sort)
+        chars = string_to_sort.scan /\w/
+        temp = chars.each_with_object({}) { |key, hash| hash[key] = chars.count(key) }
+        sorted = temp.sort_by { |_key, value| value }.reverse
+        ans = sorted.each_with_object([]) { |(key, val), arr| val.times { arr << key } }
+    
+        ans.join
+    end     
+    
 end
