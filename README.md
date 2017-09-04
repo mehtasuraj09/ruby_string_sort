@@ -6,4 +6,4 @@ The string is sorted in such a way that, in the output/result string, characters
 
 1. You need to require 'stringsort' ruby file.
 2. Create an object of the class - CharStringSort.
-3. Call the method - mostCharFirst, and pass the a string to be sorted to it.
+3. Call the method - mostCharFirst or mostCharFirst2, and pass the a string to be sorted to it.
