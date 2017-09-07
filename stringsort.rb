@@ -2,7 +2,7 @@ class CharStringSort
     def mostCharFirst string_to_sort
         temp = Hash.new
 
-        #split the string into characters and store into an array 'character_array_of_string_to_sort'
+        # split the string into characters and store into an array 'character_array_of_string_to_sort'
         character_array_of_string_to_sort = string_to_sort.split(//)      
 
         # assigning the values as hash's keys, so that only unique characters are obtained
